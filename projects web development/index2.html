@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        ul {
+            border: 6px solid red;
+            /*display:inline; this doesn't work on ul*/
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+
+        }
+        li {
+            display: inline;
+            border: 3px solid black;
+            padding: 5px 10px ;
+            margin:30px;
+            margin-top: 20px;
+            border-radius: 7px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        li:hover{
+           text-decoration: goldenrod;
+           background-color: aqua;
+           color:blue;
+         border: 10px solid aqua;
+           
+        }
+
+        li ::shadow{
+           text-shadow: goldenrod;
+           background-color: aqua;
+            
+        }
+       form .form_box{
+          text-align: center;
+            display: inline-flexbox;
+            padding:6x 10px;
+            border: 10px solid blue;
+       }
+    
+    </style>  
+
+</head>
+
+<body style="border:20px purple;text-align: justify">
+
+    <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>contact</li>
+    </ul>
+
+    <form >
+        <div class="form_box">
+        <label for="">Name </label> 
+        <input type="text " placeholder=" enter valid name " id="f"><br><br>
+        <label for=" ">email </label>
+        <input type=" email " placeholder=" enter a valid email address "><br><br>
+        <label for=" "> Password </label>
+        <input type=" password " placeholder=" enter a strong password "><br><br>
+        <label> gender: </label><br>
+        male<input type="radio" name=" Gender ">
+        <!-- adding the particular  label in input type so that it will be selected only one -->
+        female <input type="radio" name=" Gender ">
+        <br>
+        <br>
+        <input type="submit " value=" login">
+    </div>
+    </form>
+    <br>
+
+    <br>
+
+    <marquee> hello dude </marquee>
+    <!-- <details>
+        <summary>summary</summary>
+    <p>
+        this is the summary of the page 
+    </p>
+    </details>-->
+
+</body>
+
+</html>
